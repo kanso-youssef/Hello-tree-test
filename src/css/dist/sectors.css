@@ -1,0 +1,83 @@
+.sector-navbar {
+  display: inline-flex;
+}
+
+.bleu-box {
+  width: 13px;
+  height: 49px;
+  background-color: #12a5b5;
+}
+
+.vital-sectors {
+  color: #000000;
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 33px;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.new-sector {
+  color: #ff7d5e;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 20px;
+  text-align: left;
+  padding: 10px;
+  text-transform: capitalize;
+}
+
+.red-box {
+  width: 34px;
+  height: 38px;
+  background-color: #f05b40;
+}
+
+.sector-container {
+  background-color: #f5f2f0;
+  margin-bottom: 150px;
+}
+
+.sectors-sections {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.sector-section {
+  width: 20%;
+  border-left: 0.5px solid #25bcbd;
+  border-top: 0.5px solid #25bcbd;
+  padding-top: 20px;
+  padding-left: 20px;
+  height: fit-content;
+}
+
+.role {
+  display: inline-grid;
+  color: #000000;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 17px;
+  text-align: left;
+  width: 100%;
+}
+
+.role-name {
+  margin: 10px 0;
+}
+
+.navbar.sector {
+  padding: 0;
+}

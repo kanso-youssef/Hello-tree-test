@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css';
+
+// const REACT_VERSION = React.version;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App />,
+    {/* <div>React version: {REACT_VERSION}</div>, */}
   </React.StrictMode>,
   document.getElementById('root')
 );

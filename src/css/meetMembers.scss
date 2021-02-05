@@ -1,0 +1,247 @@
+$colors: (
+   mentors: #E95B40,
+   participants: #25B5B6,
+   pearl-white: #e8deda,
+   light-black: #231f20,
+   test-black: #1a1818,
+   light-gray:#f5f2f0,
+);
+
+body {
+    // font-family: sans-serif;
+    font-family: "Roboto - Regular";
+}
+
+.participants-mentors {
+    &__wrap {
+        width: 100%;
+        margin: auto;
+    }
+
+    &__title {
+        color: map-get($colors, test-black);
+        font-family: Roboto;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 900;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 33px;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__button {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    &__button-title {
+        font-weight: 600;
+
+        &.active {
+            &.mentors {
+                color: map-get($colors, mentors);
+            }
+
+            &.participants {
+                color: map-get($colors, participants);
+            }
+        }
+    }
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    border: 1px solid map-get($colors, test-black);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 2px;
+    bottom: 2px;
+    background-color: map-get($colors, mentors);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider:before {
+    background-color: map-get($colors, participants);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.sections-list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    background-color: map-get($colors, light-gray);
+    box-sizing: border-box;
+    margin-bottom: 50px;
+
+    &.sectors {
+        margin-bottom: 0;
+        padding-bottom: 5px;
+    }
+}
+
+.members-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.member-container {
+    display: inline-block;
+}
+
+.details-footer {
+    margin-top: 35px;
+}
+
+.member-image {
+    width: 39px;
+    margin-right: 5px;
+}
+
+.image-description {
+
+    color: map-get($colors, pearl-white);;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.image {
+    width: 100%;
+    height: 250px;
+}
+
+.section-container {
+    width: calc(25% - 15px);
+}
+
+.section-element {
+    width: calc(((100% - 30px) / 4) - 15px);
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+
+    &.sector {
+        display: inline-grid;
+        width: 20%;
+        color: #25bcbd;
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 20px;
+        text-align: left;
+    }
+}
+
+.section-navbar-image {
+    margin-bottom: 20px;
+    align-self: center;
+
+    &.members {
+        position: relative;
+        top: 0;
+        right: 5px;
+        margin-bottom: 0;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.members-element {
+    width: 100%;
+}
+
+.member-details {
+    display: none;
+    position: relative;
+    width: calc((100% - 3px) * 4);
+    padding: 15px 35px;
+    background-color: map-get($colors, mentors);
+
+    &.show {
+        display: block;
+    }
+
+    &.active {
+        background-color: map-get($colors, participants);
+    }
+}
+
+.margin-bottom {
+    margin-bottom: 160px;
+}
+
+.member-role {
+    font-size: 24px;
+    color: map-get($colors, pearl-white);
+}
+
+.image-label {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.member-name {
+    font-size: 18px;
+    font-weight: 900;
+    color: map-get($colors, test-black);
+}
+
+.memeber-description {
+    font-style: italic;
+    color: map-get($colors, light-black);
+}
+
+.hr-solid {
+    width: 60%;
+    border-top: 0 solid map-get($colors, pearl-white);
+    margin-top: 4px;
+    margin-bottom: 20px;
+}

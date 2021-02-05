@@ -1,0 +1,25 @@
+.navbar-primary {
+  background-color: transparent;
+}
+.navbar-primary .navbarTwo {
+  padding: 10px 30px;
+}
+.navbar-primary .navbar-collapse {
+  flex-grow: 0;
+}
+.navbar-primary .nav-link {
+  color: #1a1818;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 0 4px;
+}
+.navbar-primary .nav-link.btn-orange {
+  width: 171px;
+  background-color: #ff7d5e;
+  text-align: center;
+}

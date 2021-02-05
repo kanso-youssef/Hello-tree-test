@@ -1,0 +1,61 @@
+.sectionOne {
+    display: flex;
+
+    &__title {
+        margin-top: 150px;
+        color: #1a1818;
+        font-family: Roboto;
+        font-size: 28px;
+        font-weight: 900;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 33px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+
+    &__paragraphs {
+        width: 45%;
+        margin-bottom: 160px;
+    }
+
+    &__images {
+        width: 55%;
+        margin-bottom: 160px
+    }
+
+    &__paragraph {
+        color: #1a1818;
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 25px;
+        text-align: left;
+    }
+
+    .background-image {
+        position: absolute;
+        width: 58%;
+        left: 47%;
+        top: 41%;
+        z-index: -1;
+    }
+
+    .second-background {
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        top: 44%;
+        width: 42%;
+    }
+
+    .main-image {
+        z-index: 1;
+        width: 47%;
+        position: absolute;
+        top: 22%;
+        left: 54%;
+    }
+}
